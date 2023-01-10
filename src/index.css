@@ -12,3 +12,10 @@ button{
     font-weight: bold;
     margin: 5px
 }
+
+.form{
+    font-size: large;
+    text-align: left;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

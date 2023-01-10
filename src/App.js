@@ -1,5 +1,6 @@
 import React from "react";
 import ComponentA from "./Components/ComponentA";
+import Question from "./Components/Timer/Timer/Timer";
 import Timer from "./Components/Timer/Timer/Timer";
 // // import TimerApp from "./Components/Timer/Timer2/TimerApp";
 // import Users from "./Components/UserList/User";
@@ -25,8 +26,8 @@ class App extends React.Component {
     
     return (
       <>
-      <button onClick ={this.handleMount}>{this.state.mount?"UN-MOUNT":"MOUNT"}</button>
-      {this.state.mount ?  <Timer />: null }
+      <button onClick ={this.handleMount}>{this.state.mount?"Hide":"Show"}</button>
+      {this.state.mount ?  <Question />: null }
       
       </>
 

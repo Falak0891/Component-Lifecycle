@@ -16,7 +16,7 @@ export default class Timer extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    // console.log(prevProps, "componentDidUpdate()", this.props);
+     console.log(prevProps, "componentDidUpdate()", this.props);
     if (prevProps.timerOn !== this.props.timerOn) {
       if (this.props.timerOn) {
         this.timer = setInterval(() => {
