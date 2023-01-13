@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 
 class ComponentB extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-            name: "CA"
-         }
-         console.log("ComponentB Constructor");
-
-         
-    }
+   
 
     static getDerivedStateFromProps(props,state){
         console.log("ComponentB getDerivedStateFromProps");
@@ -27,7 +19,7 @@ class ComponentB extends Component {
     
     render() { 
         console.log("ComponentB Render")
-        return ( <><h2>{this.state.name}</h2></> );
+        return ( <><h2>{this.state.name1}</h2></> );
     }
 }
  

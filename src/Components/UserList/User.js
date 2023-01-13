@@ -4,22 +4,25 @@ class Users extends Component {
         super(props);
     
         this.state = { 
-            data:[]
+            data:[],
+            hasError:false
         }
     }
 
     componentDidMount(){
-       // localStorage.setItem("user", "ReactUser");
+       localStorage.setItem("user", "ReactUser");
         
-        // fetch('https://jsonplaceholder.typicode.com/users')
-        //     .then((response) => response.json())
-        //     .then((data) => this.setState({data}));
+        fetch('https://jsonplaceholder.typicode.com/uses')
+            .then((response) => response.json())
+            .then((data) => this.setState({data}));
 
     }
+    
     render() { 
         
+        
         return (<>
-        {/* {this.state.data.map((user) => {
+        {this.state.data.map((user) => {
             return (
                 <ul>
                     <li>{user.name}</li>
@@ -27,7 +30,7 @@ class Users extends Component {
 
             )
             
-        })} */}
+        })}
         </> );
     }
 }

@@ -26,9 +26,9 @@ class ComponentA extends Component {
         console.log("ComponentA Render")
         return ( 
             <>
-            <h1>{this.state.name}</h1>
-            <ComponentB name={this.state.name}/>
-            </>
+            <h1>{this.state.name1}</h1>
+            <ComponentB name={this.state.name1}/>
+         </>
             
          );
     }
